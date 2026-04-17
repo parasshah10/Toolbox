@@ -44,8 +44,8 @@ async def startup(server: FastMCP):
         tools=[],
         tool_defs=remote_defs,
         refresh_callback=refresh_fn,
-        n_primary=3,
-        show_index=True,
+        n_primary=0,
+        show_index=False,
     )
     yield {}
 
