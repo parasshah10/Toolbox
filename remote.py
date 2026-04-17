@@ -153,7 +153,7 @@ async def discover_tools(
             continue
 
         # Build local name with optional prefix
-        local_name = f"{prefix}-{tool.name}" if prefix else tool.name
+        local_name = f"{prefix}_{tool.name}" if prefix else tool.name
 
         # Convert schema to params
         try:
