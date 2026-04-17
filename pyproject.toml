@@ -1,0 +1,14 @@
+[project]
+name = "mcp-toolbox"
+version = "0.1.0"
+description = "Generic MCP tool aggregator — discovers and proxies tools from remote MCP servers"
+dependencies = [
+    "fastmcp",
+    "rank-bm25",
+]
+
+[tool.setuptools]
+py-modules = ["server", "omnitool", "remote"]
+
+[project.scripts]
+mcp-toolbox = "server:main"
