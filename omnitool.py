@@ -717,7 +717,7 @@ class OmniTool:
         for td in self._secondary:
             if '-' in td.name:
                 prefix, short = td.name.split('-', 1)
-                grouped.setdefault(prefix, []).append(short)
+                grouped.setdefault(prefix, []).append(td.name)
             else:
                 ungrouped.append(td.name)
 
